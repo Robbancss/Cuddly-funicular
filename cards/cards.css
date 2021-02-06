@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: #17141d;
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+}
+
+.container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #171429;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -2rem 0 2rem #000;
+
+    transition: 0.2s;
+}
+
+.card:not(:first-child) {
+    margin-left: -150px;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:hover~.card {
+    transform: translateX(150px);
+}
+
+.card-header {
+
+}
