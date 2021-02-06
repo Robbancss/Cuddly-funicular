@@ -1,2 +1,2 @@
 # Cuddly-funicular
-Trying out HTML, CSS and some JS
+Trying out some interesting HTML, CSS and some JS stuff
